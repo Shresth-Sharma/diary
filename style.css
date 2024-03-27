@@ -1,0 +1,49 @@
+body{
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    margin-bottom:0px;
+    overflow-x:hidden; 
+    background-color:rgb(151, 231, 225);
+    color:rgb(122, 162, 227);   
+}
+#mainhead{
+    font-size:10vw;
+}
+#inputdate{
+    width:90vw;
+    margin-left:5vw;
+    /* margin-right:5vw; */
+    margin-top:-2vw;
+    font-size:5vw;
+    background-color:rgb(248, 246, 227);
+    border-color:rgb(122, 162, 227);
+}
+#inputtext{
+    margin-left:5vw;
+    /* margin-right:5vw; */
+    width:90vw;
+    height:60vh;
+    margin-top:2vh;
+    font-size:4vw;
+    background-color:rgb(248, 246, 227);
+    border-color:rgb(122, 162, 227);
+}
+#bts{
+    display:flex;
+    justify-content: space-evenly;
+}
+#submit{
+    width:35vw;
+    height:8vh;
+    margin-top:3vh;
+    font-size:6vw;
+    background-color:rgb(122, 162, 227);
+}
+#read{
+    width:35vw;
+    height:8vh;
+    margin-top:3vh;
+    font-size:6vw;
+    background-color:rgb(122, 162, 227);
+}

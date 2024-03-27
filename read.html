@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="read.css">
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyD9zCqdIMlM1xv3j4JnXTP2ldnV7jwJQ1k",
+            authDomain: "online-diary-1bc16.firebaseapp.com",
+            databaseURL: "https://online-diary-1bc16-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "online-diary-1bc16",
+            storageBucket: "online-diary-1bc16.appspot.com",
+            messagingSenderId: "50133877211",
+            appId: "1:50133877211:web:0adff25136f9099a0627fe"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <title>Online Diary</title>
+</head>
+<body>
+    <div id="top">
+        <div id="inp">
+            <input id="from" type="date">
+            <input id="to" type="date">
+        </div>
+        <div id="bt">
+            <button id="submit" onclick="submit()">Fetch</button>
+            <button id="write" onclick="write1()">Write</button>
+        </div>
+    </div>
+    <div id="contentmaindiv">
+
+    </div>
+    
+    <script src="read.js"></script>
+</body>
