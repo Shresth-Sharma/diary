@@ -1,4 +1,4 @@
-if(prompt('Enter the password') == 'ShresthDiary'){
+if(prompt('Enter the password') != 'ShresthDiary'){
     document.body.style.display = 'none'
     alert('Wrong Passwrod')
 }
