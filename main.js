@@ -1,7 +1,7 @@
-if(prompt('Enter the password') != 'ShresthDiary'){
-    document.body.style.display = 'none'
-    alert('Wrong Password')
-}
+// if(prompt('Enter the password') != 'ShresthDiary'){
+//     document.body.style.display = 'none'
+//     alert('Wrong Password')
+// }
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0');
@@ -37,6 +37,9 @@ function submit(){
             database.ref('Diary/' + date).update({
                 content:content
             })
+            date1 = new Date(date)
+            date1.setDate(date1.getDate() + 1);
+            document.getElementById("inputdate").value = date1.toISOString().slice(0, 10);;
             alert('Written data to '+date)
             document.getElementById('inputtext').value = '';
         }
@@ -44,6 +47,9 @@ function submit(){
             database.ref('Diary/' + date).update({
                 content:content
             })
+            date1 = new Date(date)
+            date1.setDate(date1.getDate() + 1);
+            document.getElementById("inputdate").value = date1.toISOString().slice(0, 10);;
             alert('Written data to '+date)
             document.getElementById('inputtext').value = '';
         }

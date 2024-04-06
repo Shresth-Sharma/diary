@@ -3,7 +3,8 @@ body{
     margin-right:0px;
     margin-top:0px;
     margin-bottom:0px;
-    overflow:hidden; 
+    overflow-x:hidden; 
+    overflow-y:auto;
     background-color:rgb(151, 231, 225);
     color:rgb(122, 162, 227);   
 }
@@ -58,6 +59,7 @@ body{
     margin-left:2vw;
     margin-right:2vw;
     margin-top:4vw;
+    overflow-y:auto;
 }
 .contentdiv{
     /* border-style:solid; */
