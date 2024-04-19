@@ -1,7 +1,14 @@
-// if(prompt('Enter the password') != 'ShresthDiary'){
-//     document.body.style.display = 'none'
-//     alert('Wrong Password')
-// }
+if(prompt('Enter the password') != 'ShresthDiary'){
+    document.body.style.display = 'none'
+    alert('Wrong Password')
+}
+let width = window.innerWidth;
+let height = window.innerHeight;
+
+if (width / height > 1) {
+    document.getElementById('css').href = 'style1.css';
+}
+
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0');
