@@ -1,3 +1,7 @@
+@font-face {
+    font-family: writing;
+    src: url(writing.ttf);
+}
 body{
     margin-left:0px;
     margin-right:0px;
@@ -6,21 +10,25 @@ body{
     overflow-x:hidden; 
     overflow-y:auto;
     background-color:rgb(151, 231, 225);
-    color:rgb(122, 162, 227);   
+    color:rgb(122, 162, 227); 
+    font-family:writing;  
 }
 #top{
     margin-top:2vw;
     /* border-style:solid; */
     border-width:1vw;
     border-color:black;
+    font-family:writing;
 }
 #inp{
     display:flex;
     justify-content: space-evenly;
+    font-family:writing;
 }
 #bt{
     display:flex;
     justify-content: space-evenly;
+    font-family:writing;
     margin-top:2vw;
 }
 #from{
@@ -29,6 +37,7 @@ body{
     margin-left:2vw;
     margin-top:-1vw;
     background-color:rgb(248, 246, 227);
+    font-family:writing;
     border-color:rgb(122, 162, 227);
 }
 #to{
@@ -37,6 +46,7 @@ body{
     margin-top:-1vw;
     background-color:rgb(248, 246, 227);
     border-color:rgb(122, 162, 227);
+    font-family:writing;
 }
 #submit{
     width:40vw;
@@ -45,6 +55,7 @@ body{
     margin-top:1vw;
     height:6vw;
     background-color:rgb(122, 162, 227);
+    font-family:writing;
 }
 #write{
     width:40vw;
@@ -53,6 +64,7 @@ body{
     margin-top:1vw;
     height:6vw;
     background-color:rgb(122, 162, 227);
+    font-family:writing;
 }
 #contentmaindiv{
     /* border-style:solid; */
@@ -60,11 +72,13 @@ body{
     margin-right:2vw;
     margin-top:4vw;
     overflow-y:auto;
+    font-family:writing;
 }
 .contentdiv{
     /* border-style:solid; */
     border-color:black;
     background-color:rgb(248, 246, 227);
+    font-family:writing;
     border-radius:5%;
     padding-bottom:0.1vw;
 }
@@ -72,6 +86,7 @@ body{
     padding-top:2vw;
     margin-top:2vw;
     color:rgb(122, 162, 227);
+    font-family:writing;
     margin-left:2vw;
     font-size:6vw;
 }
@@ -80,4 +95,5 @@ body{
     margin-top:2vw;
     font-size:4vw;
     color:black;
+    font-family:writing;
 }
