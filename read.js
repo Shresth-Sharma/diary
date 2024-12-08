@@ -36,7 +36,7 @@ function getDay(date){
         6:152, 
         7:182,
         8:213, 
-        9:243, 
+        9:244, 
         10:274, 
         11:304, 
         12:335 
@@ -50,7 +50,7 @@ function getDay(date){
         6:151, 
         7:182, 
         8:212, 
-        9:242, 
+        9:243, 
         10:273, 
         11:303, 
         12:334
@@ -93,6 +93,54 @@ function submit(){
     let days = rangeDates(from, to)
     document.getElementById('contentmaindiv').innerHTML = '';
     for(let i of days){
+        // console.log(i)
+        // console.log(i + '   ' + getDay(i))
+            database.ref('Diary/'+i).once('value', function (data){
+                let content
+                try{
+                    content = data.val().content
+                }
+                catch{
+                    content = ''
+                }
+                let day = getDay(i)
+                let [y, m , d] = i.split('-')
+                let date = d + '-' + m + '-' + y;
+                let div = document.createElement('div')
+                div.classList.add('contentdiv')
+                let head = document.createElement('h1')
+                head.classList.add('contenthead')
+                head.innerHTML = date + '  ||  ' + day
+                let para = document.createElement('p')
+                para.innerHTML = content
+                para.classList.add('contentpara')
+                div.appendChild(head)
+                div.appendChild(para)
+                document.getElementById('contentmaindiv').appendChild(div)
+            })
+    }
+}
+function getDatesWithTodayInAllYears(fromYear = 2022) {
+    const today = new Date();
+    const currentYear = today.getFullYear();
+    const month = (today.getMonth() + 1).toString().padStart(2, '0'); // Month is 0-indexed
+    const day = today.getDate().toString().padStart(2, '0');
+    
+    const dates = [];
+    for (let year = fromYear; year <= currentYear; year++) {
+        dates.push(`${year}-${month}-${day}`);
+    }
+    
+    return dates;
+}
+
+// console.log(getDatesWithTodayInAllYears());
+function yearback(){
+    let days = getDatesWithTodayInAllYears()
+    document.getElementById('contentmaindiv').innerHTML = '';
+    for(let i of days){
+        // console.log(i)
+        // console.log(i + '   ' + getDay(i))
             database.ref('Diary/'+i).once('value', function (data){
                 let content
                 try{
