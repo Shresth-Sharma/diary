@@ -1,7 +1,7 @@
-// if(prompt('Enter the password') != 'ShresthDiary'){
-//     document.body.style.display = 'none'
-//     alert('Wrong Passwrod')
-// }
+if(prompt('Enter the password') != 'ShresthDiary'){
+    document.body.style.display = 'none'
+    alert('Wrong Passwrod')
+}
 let width = window.innerWidth;
 let height = window.innerHeight;
 
